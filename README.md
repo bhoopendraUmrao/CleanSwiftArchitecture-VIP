@@ -13,6 +13,9 @@ A sample iOS app built using the Clean Swift architecture. Clean Swift is Uncle 
 * Data Binding using protocols
 * Dependency Injection
 
+### Dependency Direction
+![Alt text](https://github.com/bhoopendraUmrao/CleanSwiftArchitecture-VIP/blob/master/CleanSwift(VIP).png "Modules Dependencies")
+
 ## Includes
 * Object oriented programming approach
 * UIKit for UI
