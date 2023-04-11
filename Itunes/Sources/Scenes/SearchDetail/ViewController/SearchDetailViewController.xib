@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchDetailViewController" customModule="Itunes" customModuleProvider="target">
+            <connections>
+                <outlet property="artWorkImageView" destination="lbi-Im-raj" id="AHj-QA-5R0"/>
+                <outlet property="artistName" destination="TOB-WJ-oFf" id="nSH-jH-gfw"/>
+                <outlet property="previewButton" destination="9cf-oe-fSp" id="geX-RP-Vny"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lbi-Im-raj">
+                    <rect key="frame" x="52" y="110" width="310.5" height="308"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lbi-Im-raj" secondAttribute="height" multiplier="1:1" id="9Cv-pO-tyJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOB-WJ-oFf">
+                    <rect key="frame" x="167.5" y="479.5" width="79.5" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cf-oe-fSp">
+                    <rect key="frame" x="138" y="558" width="138" height="40.5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Preview" imagePadding="8" cornerStyle="dynamic">
+                        <imageReference key="image" image="play" catalog="system" symbolScale="large"/>
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        </backgroundConfiguration>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        </preferredSymbolConfiguration>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="previewBtnClicked:" destination="-1" eventType="touchUpInside" id="io5-jV-2pp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lbi-Im-raj" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="3dU-gX-OdK"/>
+                <constraint firstItem="lbi-Im-raj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="9i8-WK-pXq"/>
+                <constraint firstItem="lbi-Im-raj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Fch-We-aFG"/>
+                <constraint firstItem="9cf-oe-fSp" firstAttribute="centerX" secondItem="lbi-Im-raj" secondAttribute="centerX" id="Lzf-z5-1Gx"/>
+                <constraint firstItem="TOB-WJ-oFf" firstAttribute="top" secondItem="lbi-Im-raj" secondAttribute="bottom" constant="60" id="sN3-gl-5Zw"/>
+                <constraint firstItem="TOB-WJ-oFf" firstAttribute="centerX" secondItem="lbi-Im-raj" secondAttribute="centerX" id="xfP-qg-sCK"/>
+                <constraint firstItem="9cf-oe-fSp" firstAttribute="top" secondItem="TOB-WJ-oFf" secondAttribute="bottom" constant="40" id="zYe-aj-hAd"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="82.366071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

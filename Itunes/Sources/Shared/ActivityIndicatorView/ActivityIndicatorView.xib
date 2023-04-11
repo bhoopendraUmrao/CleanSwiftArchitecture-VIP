@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityIndicatorView" customModule="Itunes" customModuleProvider="target">
+            <connections>
+                <outlet property="blurView" destination="MdM-hZ-rhV" id="f1R-Ug-3YN"/>
+                <outlet property="loaderIndicatorView" destination="gKX-bl-JbO" id="k0h-wA-2Vc"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="oiQ-uj-KH5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdM-hZ-rhV">
+                    <rect key="frame" x="124" y="370" width="166" height="166"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g6A-fB-ldC">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="gKX-bl-JbO">
+                                <rect key="frame" x="64.5" y="64.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gKX-bl-JbO" firstAttribute="centerY" secondItem="g6A-fB-ldC" secondAttribute="centerY" id="Sdy-ns-jal"/>
+                            <constraint firstItem="gKX-bl-JbO" firstAttribute="centerX" secondItem="g6A-fB-ldC" secondAttribute="centerX" id="sid-J9-crp"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" systemColor="systemFillColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MdM-hZ-rhV" secondAttribute="height" multiplier="1:1" id="pnd-mc-dYZ"/>
+                    </constraints>
+                    <vibrancyEffect>
+                        <blurEffect style="regular"/>
+                    </vibrancyEffect>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MdM-hZ-rhV" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="3CF-ad-Vjv"/>
+                <constraint firstItem="MdM-hZ-rhV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="S6B-K1-kRX"/>
+                <constraint firstItem="MdM-hZ-rhV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="vsb-e7-uQw"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

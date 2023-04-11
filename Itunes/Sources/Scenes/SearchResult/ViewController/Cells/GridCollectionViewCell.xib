@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GridCollectionViewCell" customModule="Itunes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="boU-G8-Mei">
+                        <rect key="frame" x="74" y="9" width="100" height="97.5"/>
+                        <color key="tintColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="1IL-od-Zb6"/>
+                            <constraint firstAttribute="height" constant="100" id="SIh-Ie-BTJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="goo-46-669">
+                        <rect key="frame" x="8" y="118" width="232" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="goo-46-669" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="L0A-dL-NNE"/>
+                <constraint firstItem="boU-G8-Mei" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="NiD-1K-vyc"/>
+                <constraint firstAttribute="trailing" secondItem="goo-46-669" secondAttribute="trailing" constant="8" id="c4E-8T-7Vs"/>
+                <constraint firstItem="goo-46-669" firstAttribute="top" secondItem="boU-G8-Mei" secondAttribute="bottom" constant="10" id="wMT-sI-SbZ"/>
+                <constraint firstItem="boU-G8-Mei" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="xY0-wz-xdR"/>
+            </constraints>
+            <size key="customSize" width="248" height="189"/>
+            <connections>
+                <outlet property="artWorkImageView" destination="boU-G8-Mei" id="Dn6-dT-Q2Z"/>
+                <outlet property="titleLabel" destination="goo-46-669" id="ei5-1p-QsG"/>
+            </connections>
+            <point key="canvasLocation" x="281.15942028985512" y="177.12053571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
